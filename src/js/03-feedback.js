@@ -16,8 +16,7 @@ function onFormSubmit(event) {
   const parsedData = JSON.parse(currentData);
 
   console.log(parsedData);
-  console.log(`User e-mail: ${parsedData.name}`);
-  console.log(`User comment: ${parsedData.message}`);
+  
 
   event.target.reset();
   localStorage.removeItem(FORM_KEY);
